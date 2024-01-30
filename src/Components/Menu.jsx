@@ -44,9 +44,9 @@ function Menu() {
               <div className="menu-left">
                 <img src={item.icon} alt="" srcset="" />
                 {item.title}
-                {/* <span
+                <span
                   style={{ color: 'white',background:'red',borderRadius:'50%', }}> {item.value}
-                </span> */}
+                </span>
               </div>
             </div>
           );

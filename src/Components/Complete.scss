@@ -1,0 +1,35 @@
+.compelete-profile {
+  max-width: 100%;
+  max-height: 89px;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  margin-top: 2rem;
+  .content {
+  
+    width: 230px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    h6 {
+      color: black;
+      margin-left: 10px;
+    }
+    .first {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      p {
+        max-width: 20%;
+        font-size: 12px;
+      }
+      hr {
+        background-color: #2563EB;
+        width: 80%;
+        height: 5px;
+        border: none;
+      }
+    }
+  }
+}

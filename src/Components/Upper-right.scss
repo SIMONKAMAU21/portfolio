@@ -1,0 +1,33 @@
+.main-container2{
+   align-items: center;
+   display: flex;
+   // flex-direction: row;
+   .container{
+      display: flex;
+      flex-direction: column;
+      .upper-div{
+         display: flex;
+         align-items: center;
+         gap: 1rem;
+         input{
+            border: none;
+            border-radius: 2rem;
+         }
+      }
+      .lower-div{
+         display: flex;
+         flex-direction: row;
+         .images1{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            // gap: 2rem;
+            color: #94A3B8;
+            justify-content: space-between;
+            img{
+               width: 24px;
+            }
+         }
+      }
+   }
+}

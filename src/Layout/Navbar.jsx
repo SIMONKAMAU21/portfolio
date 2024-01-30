@@ -25,7 +25,7 @@ function Navbar() {
           <img src={Notification} alt="nopic"/>
           <div className="userAvator">
             <img src={Avatar} alt="nopic" />
-            <img src={Chevron} alt="" srcset="" />
+            <img src={Chevron} alt="nopic" />
           </div>
         </div>
       </div>

@@ -1,0 +1,26 @@
+.Contacts1{
+   display: flex;
+   flex-direction: column;
+   font-size: 10px;
+   margin-left: 2rem;
+   .conc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    h4{
+      color: #94A3B8;
+    }
+   }
+   .Contacts {
+    display: flex;
+    // align-items: center;
+    .Contacts-left{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 600;
+    }
+   }
+ }
+ 

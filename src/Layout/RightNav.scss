@@ -1,0 +1,15 @@
+.container1 {
+  border-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  background-color:gray;
+  .pages {
+    line-height: 2rem;
+  }
+  .contacts-page {
+    line-height: 2rem;
+  }
+  .groups-page {
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,36 @@
+.upper {
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+// background-color: aqua
+;    align-items: center;
+
+  }
+  .text {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 500;
+  }
+  .maps{
+   display: flex;
+   flex-direction: column;
+   line-height: 1px;
+   
+   .map1{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    
+      p{
+         font-size: 14px;
+      }
+   }
+   p{
+      font-size: 14px;
+   }
+  }
+}

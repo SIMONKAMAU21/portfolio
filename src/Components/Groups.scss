@@ -1,0 +1,21 @@
+.groups{
+   margin-left: 2rem;
+   font-size: 10px;
+   .conc{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #94A3B8;
+   }
+
+   .Groups{
+      align-items: center;
+      display: flex;
+      .Groups-left{
+         display: flex;
+         align-items: center;
+         gap: 1rem;
+         // justify-content: center;
+      }
+   }
+}
