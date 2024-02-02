@@ -1,0 +1,122 @@
+.groupsG {
+  display: flex;
+  width: 831px;
+  flex-direction: column;
+  margin-top: 80px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  .PHOTOS {
+    display: flex;
+    gap: 2rem;
+
+    .left-group-photo,
+    .right-group-photo {
+      gap: 3rem;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 10px 10px;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+  
+      .IMAGE {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 15px;
+      }
+    }
+  }
+  .nav-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    h4 {
+      color: #0f172a;
+    }
+    .btn2 {
+      display: flex;
+      align-items: center;
+      button {
+        background-color: #2563eb;
+        height: 48px;
+        border-radius: 12px;
+        color: #ffffff;
+        font-size: 14px;
+        border: none;
+      }
+    }
+  }
+  .suggestion {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    line-height: 1px;
+    align-items: center;
+    .text {
+      line-height: 1px;
+      h4 {
+        color: #0f172a;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      p {
+        color: #94a3b8;
+        font-size: 12px;
+      }
+    }
+  }
+  .link {
+    a {
+      font-weight: 400;
+      color: #2563eb;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+  .photos {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    .photos-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .photos-left {
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+
+        .upper-text {
+          flex-direction: column;
+          line-height: 1px;
+        }
+        h4 {
+          font-size: 14px;
+          font-weight: 600;
+          color: #0f172a;
+        }
+        p {
+          color: #64748b;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .groups-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    button {
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

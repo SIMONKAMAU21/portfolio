@@ -1,0 +1,44 @@
+.notification-Main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 242, 247);
+  margin-top: 5rem;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 380px;
+  position: absolute;
+  margin-left: 300px;
+  box-shadow: 5px 5px 10px 5px rgba(9, 38, 49, 0.25);
+  z-index: 1;
+  h5 {
+    color: #94a3b8;
+  }
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin: 2rem;
+    h6 {
+      margin-left: 2rem;
+      color: #0f172a;
+      font-size: 14px;
+    }
+    img {
+      margin-right: 2rem;
+    }
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      margin: 20px 20px;
+    }
+  }
+}

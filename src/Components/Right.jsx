@@ -1,13 +1,13 @@
 import './Right.scss';
-import Upperapp from './Upper-right';
-import Lowerapp from './Lower-right';
+import UpperApp from './Upper-right';
+import LowerApp from './Lower-right';
 
 const Right = ()=>{
    return(
       <>
       <div className="right1">
-         <Upperapp/>
-         <Lowerapp/>
+         <UpperApp/>
+         <LowerApp/>
          
       </div>
       

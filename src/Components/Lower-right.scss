@@ -2,28 +2,32 @@
   display: flex;
   // align-items: center;
   flex-direction: column;
-  // background-color: #
+  // background-color : blue ;
+  border-radius: 5px;
   overflow: hidden;
   margin: auto;
+  margin-top: 15px;
+  gap: 0.9rem;
   .para{
    color: #64748B;
    font-size: 14px;
+    
+   border-radius: 5px;
   }
   .left {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 10px;
+     
+    border-radius: 5px;
     h5 {
       font-weight: 500;
       font-size: 16px;
     }
     .text {
-      display: flex;
-      // align-items: center;
       flex-direction: column;
       line-height: 1px;
-      // inline-size: 1rem;
     }
   }
   .bottom {
@@ -31,11 +35,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
+     
+    border-radius: 5px;
   }
   .most-bottom{
    display: flex;
    align-items: center;
    justify-content: space-between;
+  //  margin-top: 15px;
+    
+   border-radius: 5px;
    .div1{
       display: flex;
       align-items: center;
@@ -46,6 +55,8 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   border-radius: 5px;
+
    input{
       border: none;
       border-radius: 10px;

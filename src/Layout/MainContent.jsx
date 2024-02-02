@@ -4,7 +4,7 @@ import Upper from "../Components/Upper-main";
 import Right from "../Components/Right";
 function MainContent() {
   return (
-    <div className="main">
+    <div className="main1">
       <div className="upper-stage">
         <Upper />
       </div>

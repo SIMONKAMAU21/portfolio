@@ -1,13 +1,36 @@
-.pages{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-size: 10px;
-   // float:right;
-   .conc{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-weight: 700;
-   }
+.Pages {
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  margin-left: 0.7rem;
+  font-size: 12px;
+  font-weight: 500;
+  .Conc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #94a3b8;
+    }
+  }
+  .Pages-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .name {
+      color: red;
+    }
+  }
 }

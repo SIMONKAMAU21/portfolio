@@ -17,7 +17,7 @@ function SideNav() {
         <Menu />
       </div>
       <div className="sidenav-suggestions">
-        
+        <h5>SHORTCUTS</h5>
         <Short/> </div>
     </div>
   );

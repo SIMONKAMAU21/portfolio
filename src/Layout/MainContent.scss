@@ -1,13 +1,17 @@
-.main{
-   // background-color: teal;
-   border-right: 2px solid white;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   // overflow-: hidden;
+.main1 {
+  border-right: 2px solid white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 80px;
+  overflow: hidden;
 
-   .lower-stage{
-      display: flex;
-      gap: 3.5rem;
-   }
+  width: 831px;
+  margin-left: 250px;
+
+  .lower-stage {
+    display: flex;
+    gap: 3.5rem;
+  }
 }

@@ -7,8 +7,8 @@ function Lower() {
 
 
    return (
-      <div className="main1">
-         <div className="nav1">
+      <div className="main2">
+         <div className="nav2">
             <p>photos</p>
             <a href="http://">see all</a>
          </div>

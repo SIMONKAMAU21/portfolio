@@ -3,9 +3,11 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
-  overflow: hidden;
-  margin: 10px;
+  position: fixed;
+  top: 0;
+  // margin: 10px;
   border-bottom: 1px solid rgb(243, 234, 234);
+  background-color: white;
   .nav-logo {
     display: flex;
     flex-direction: row;
@@ -27,6 +29,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      margin-right: 10px;
       .message {
         max-width: 25px;
       }
@@ -48,6 +51,7 @@
         border: none;
         margin-left:px;
         outline: none;
+        color: rgb(18, 73, 87);
       }
     }
   }

@@ -1,0 +1,33 @@
+.timeline-page {
+  display: flex;
+  flex-direction: column;
+  width: 831px;
+  margin-top: 5rem;
+  margin-left: 250px;
+  background-color: aliceblue;
+  // gap: 2rem;
+  // border-radius: 10px;
+  .upper-timeline{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // background-color:rgb(15, 4, 4);
+    // height: 215px;
+    border-radius: 10px;
+    margin: 10px 10px;
+  }
+  .middle-timeline {
+    // background-color: greenyellow;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+    border-radius: 10px;
+  }
+  .lower-timeline {
+    background-color: teal;
+    width: 100%;
+    margin-right: 2.5rem;
+  }
+}

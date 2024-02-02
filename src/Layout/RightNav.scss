@@ -1,15 +1,23 @@
 .container1 {
-  border-color: #f8fafc;
+  // border-color: #f8fafc;
+  border-left: 1px solid aliceblue;
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
+  position: fixed;
+  right: 0;
+  margin-right: 50px;
+  // background-color: greenyellow;
+  height: 100%;
+  // width: 29px;
   // background-color:gray;
   .pages {
     line-height: 2rem;
   }
   .contacts-page {
-    line-height: 2rem;
+    // line-height: 2rem;
   }
   .groups-page {
-    line-height: 3rem;
+    // line-height: 2rem;
   }
 }

@@ -1,13 +1,24 @@
 .Contacts1{
    display: flex;
    flex-direction: column;
-   font-size: 10px;
-   margin-left: 2rem;
+   font-size: 12px;
+   margin-left: 0.7rem;
+  //  background-color: greenyellow;
+   width: 100%;
    .conc{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 700;
+    list-style: none;
+    a{
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    img{
+      width: 4px;
+      height: 10px;
+    }
     h4{
       color: #94A3B8;
     }
@@ -19,7 +30,12 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 12px;
+      font-family: inter,sans-serif;
+      img{
+        width: 34px;
+      }
     }
    }
  }

@@ -1,6 +1,9 @@
 .shortcut{
    display: flex;
    flex-direction: column;
+   line-height: 1px;
+   // width: 100%;
+   font-weight: normal;
    .react{
       display: flex;
       align-items: center;

@@ -6,19 +6,18 @@ import Lower from "../Components/Lower";
 const LeftNav = () => {
   return (
     <>
-    <div className="left1">
-
-<div className="compelete">
-<Complete />
-</div>   
-<div className="intro">
-<Intro />
-</div>     
-<div className="lower">
-<Lower />
-</div>
-    </div>
+      <div className="left1">
+        <div className="compelete">
+          <Complete />
+        </div>
+        <div className="intro">
+          <Intro />
+        </div>
+        <div className="lower">
+          <Lower />
+        </div>
+      </div>
     </>
   );
 };
-export default LeftNav
+export default LeftNav;

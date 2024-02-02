@@ -1,0 +1,48 @@
+.yesterday{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   align-items: center;
+   .top{
+      display: flex;
+      margin: 0;
+      align-items: center;
+      width: 100%;
+   }
+   .yesterday-left{
+      align-items: center;
+      display: flex;
+      font-size: 10px;
+      .card{
+         display: flex;
+         align-items: center;
+         background-color:#F8FAFC;
+         width: 355px;
+         height: 88px;
+         border-radius: 1px;
+         :hover{
+            border-left: 1rem solid greenyellow;
+         }
+         img{
+            margin: 1rem;
+         }
+         .yesterday-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1rem;
+            .name{
+               color: #0F172A;
+               font-weight: 600;
+               font-size: 14px;
+            }
+            
+            .p{color: gray;
+               font-weight: 500;
+               font-size: 12px;
+            
+            }
+         }
+      }
+   }
+}
