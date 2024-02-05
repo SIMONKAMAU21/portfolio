@@ -8,14 +8,17 @@ const Pages = () => {
     {
       name: "Website Design",
       IMAGE: first,
+      id:1,
     },
     {
       name: "Mobile Design",
       IMAGE: third,
+      id:2,
     },
     {
       name: "Product Design",
       IMAGE: second,
+      id:3,
     },
   ];
   return (

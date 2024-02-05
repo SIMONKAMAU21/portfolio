@@ -1,0 +1,13 @@
+.friends{
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 831px;
+  margin-left: 250px;
+  // border: 2px solid black;
+  .friends-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

@@ -1,0 +1,117 @@
+.form-container {
+  margin: auto;
+  margin-top: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(to top left, black, rgb(222, 240, 255), black);
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+//   position: absolute;
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(2, 2, 65);
+  }
+
+  .form {
+    background: linear-gradient(
+      to top left,
+      rgb(0, 0, 0),
+      rgb(221, 236, 248),
+      rgb(9, 34, 26)
+    );
+    display: flex;
+
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.986);
+    //  background: transparent;
+    justify-content: center;
+    margin-top: 2rem;
+    margin: 10px 10px;
+    .submit-container {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      margin: 10px 10px;
+      margin: auto;
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        .submit-grey {
+          background-color: #cecece;
+          color: rgb(1, 1, 95);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        button {
+          height: 2rem;
+          display: flex;
+          width: 20vh;
+         //  align-items: center;
+          background-color: rgb(1, 1, 95);
+          border: none;
+          border-radius: 10px;
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+    .forgot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 10px;
+      .remember {
+        display: flex;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      // backdrop-filter: ;
+      input {
+      //   border: 2px solid black;
+        width: 30vw;
+        height: 40px;
+        border-radius: 10px;
+        margin: 10px 10px;
+        background-color: transparent;
+        color: rgb(0, 12, 82);
+        font-size: 14;
+        font-weight: 600;
+        outline: none;
+        border: 2px rgb(0, 0, 54) solid;
+      }
+      h1 {
+        color: rgb(0, 0, 65);
+        font-weight: 800;
+      }
+    }
+    .register {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 10px;
+      p {
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}

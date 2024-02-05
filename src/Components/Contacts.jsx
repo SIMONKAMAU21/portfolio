@@ -9,23 +9,28 @@ function Contacts() {
     {
       name: "Wade Wrren",
       IMAGE: Avatar1,
+      id:1,
     },
     {
       name: "Jane Cooper",
       IMAGE: Avatar7,
+      id:2,
     },
     {
       name: "Esther Howard",
       IMAGE: Avatar2,
+      id:3,
     },
 
     {
       name: "Cameron Williamson",
       IMAGE: Avatar3,
+      id:4,
     },
     {
       name: "Brooklyn Simmons",
       IMAGE: Avatar7,
+      id:5,
     },
   ];
   return (

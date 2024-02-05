@@ -24,13 +24,13 @@ function Menu() {
       title: "Friends",
       icon: FRIENDS,
       path: "/Friends",
-      id:3
+      id:3,
     },
     {
       title: "Groups",
       icon: GROUPS,
       path: "/Groups",
-      id:4
+      id:4,
     },
 
     {
@@ -43,14 +43,14 @@ function Menu() {
       title: "Photos",
       icon: PHOTOS,
       path: "/Photos",
-      id:6
+      id:6,
     },
     {
       title: "Events",
       icon: EVENTS,
       value: 10,
       path: "/Events",
-      id:7
+      id:7,
     },
   ];
   return (
