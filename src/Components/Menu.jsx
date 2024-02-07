@@ -8,12 +8,12 @@ import TIMELINE from "../assets/TIMELINE.png";
 import VIDEOS from "../assets/VIDEOS.png";
 function Menu() {
   const Menu = [
-    // {
-    //   title: "Notification",
-    //   icon: TIMELINE,
-    //   path: "/Notification",
-    //   id:1,
-    // },
+    {
+      title: "Notification",
+      icon: TIMELINE,
+      path: "/Notification",
+      id:1,
+    },
     {
       title: "Timeline",
       icon: TIMELINE,
@@ -65,7 +65,7 @@ function Menu() {
                 to={item.path}
                 className="menu-icons"
                 activeClassName="active"
-                style={{ textDecoration: "none", fontWeight: "700" }}
+                style={{ textDecoration: "none",color:"blue", fontWeight: "700" }}
               >
                 <div className="menu-left">
                   <img src={item.icon} />

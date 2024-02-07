@@ -101,7 +101,7 @@ const Videos = () => {
           </p>
         </div>
         <div className="video-container">
-          <img src={bigvideo1} alt="" />
+          <img src={post} alt="" />
           <img src={playbtn} alt="" />
         </div>
         <div className="video-user-details">
@@ -123,7 +123,7 @@ const Videos = () => {
           </p>
         </div>
         <div className="video-container">
-          <img src={bigvideo} alt="" />
+          <img src={post} alt="" />
           <img src={playbtn} alt="" />
         </div>
         <div className="video-user-details">
@@ -145,7 +145,7 @@ const Videos = () => {
           </p>
         </div>
         <div className="video-container">
-          <img src={bigvideo2} alt="" />
+          <img src={post} alt="" />
           <img src={playbtn} alt="" />
         </div>
         <div className="video-user-details">
@@ -167,7 +167,7 @@ const Videos = () => {
           </p>
         </div>
         <div className="video-container">
-          <img src={bigvideo} alt="" />
+          <img src={post} alt="" />
           <img src={playbtn} alt="" />
         </div>
         <div className="video-user-details">
@@ -189,7 +189,7 @@ const Videos = () => {
           </p>
         </div>
         <div className="video-container">
-          <img src={bigvideo1} alt="" />
+          <img src={post} alt="" />
           <img src={playbtn} alt="" />
         </div>
         <div className="video-user-details">

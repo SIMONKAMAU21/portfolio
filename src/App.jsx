@@ -12,12 +12,13 @@ import Login from "./multi-pages/Login";
 import Friends from "./multi-pages/Friends";
 import Videos from "./multi-pages/Videos";
 import Photos from "./multi-pages/Photos";
+import Event from "./multi-pages/Events";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="container">
+      <div className="main-container">
         <SideNav />
         <Right />
       </div>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Friends" element={<Friends />} />
         <Route path = "/Photos"element ={<Photos/>}/>
         <Route path = "/Videos"element ={<Videos/>}/>
+        <Route path="/Events" element = {<Event/>}/>
         
         </Routes>
     </BrowserRouter>

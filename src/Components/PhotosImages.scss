@@ -1,11 +1,7 @@
 .Eventcontainer {
   width: 850px;
-  // background-color: red;
-  // margin: auto;
-  height: 72vh;
-  // align-items: center;
+
   display: flex;
-  gap: 1rem;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
@@ -13,17 +9,13 @@
 
   .image-card {
     display: flex;
-    // align-items: center;
-    gap: 1.5rem;
     height: 60%;
-    // background-color: #fff;
-    // width: 100%;
+   margin: 10px 10px;
     flex-wrap: wrap;
 
     img {
-      height: 200px;
-      width: 200px;
-      gap: 1rem;
+      height: 180px;
+      width: 180px;
       box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.25);
     }
   }
