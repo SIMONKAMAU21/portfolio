@@ -1,0 +1,309 @@
+
+
+
+/////////////////////////////////////////////////////
+### Creating anew user
+POST http://localhost:9000/api/users/register
+Content-Type: application/json
+
+{
+   "UserID":"73",
+   "Username":"peter karaja",
+   "Email":"debugal@gmail.com",
+   "TagName":"sk",
+   "Password":"12346",
+   "Location":"nyeri"
+}
+
+//////////////////////////////////////////////////
+### grtting all users from table
+
+GET http://localhost:9000/api/Users/getUser
+///////////////////////////////////////////////
+### getting users by id
+
+GET http://localhost:9000/api/Users/73
+
+
+### Update a user
+PUT http://localhost:9000/api/users/73
+Content-Type: application/json
+
+{
+    "Username":"simon kamau",
+    "Email": "kamau@momdragons.com",
+    "Password":"khaleesi00",
+    "TagName":"M@simon",
+    "Location":"Nairobi"
+}
+
+
+
+
+
+/////////////////////////////////////////////////////////////////
+
+### creating new friends
+POST  http://localhost:9000/api/friends/create
+Content-Type: application/json
+
+{
+   "FriendshipID": 5,
+   "User1ID": 10,
+   "User2ID":10,
+   "FriendshipDate": 20230520
+}
+//////////////////////////////////////////////////////
+###getting all friends
+GET http://localhost:9000/api/friends/getfriends
+
+///////////////////////////////////////////////
+### geting friendship by id
+GET http://localhost:9000/api/friends/10
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+### creating a group
+POST http://localhost:9000/api/groups/create
+Content-Type: application/json
+
+{
+"GroupID":4,
+"GroupName":"Group4",
+"Description":"i created this group",
+"CreatedDate":2023232
+}
+//////////////////////////////////////////
+### getting all groups
+GET http://localhost:9000/api/groups/getgroups
+
+////////////////////////////////////////////////
+#### getting groups by id
+GET http://localhost:9000/api/groups/3
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////
+#### adding post
+
+POST http://localhost:9000/api/posts/add
+Content-Type: application/json
+{
+   "PostID":"5",
+   "UserID":"3",
+   "Content":"YOU CAN DO IT KEEP PUSHING",
+   "PostDate":2023,
+   "Likes":"19",
+   "Comments":"6"
+}
+
+//////////////////////////////////////////
+### getting all post
+GET http://localhost:9000/api/posts/getposts
+
+////////////////////////////////////////////////
+#### getting post by id
+GET http://localhost:9000/api/posts/1
+
+
+### updating a post
+PUT http://localhost:9000/api/posts/1
+Content-Type: application/json
+
+{
+    "UserID":"Khaleesi",
+    "Likes": "Khaleesi@momdragons.com",
+    "Content":"khaleesi00",
+    "Comments":"MotherOfDragons",
+    "PostDate":"kandara"
+}
+
+
+
+
+////////////////////////////////////////////////////
+#### adding comment
+
+POST http://localhost:9000/api/comments/add
+Content-Type: application/json
+{
+"CommentID":5,
+"Content":"COmment on post 4 by user3",
+"UserID":"3",
+"CommentDate":2023,
+"PostID":"5"
+}
+//////////////////////////////////////////
+### getting all post
+GET http://localhost:9000/api/comments/getcomments
+
+////////////////////////////////////////////////
+#### getting post by id
+GET http://localhost:9000/api/comments/4
+
+
+
+
+
+
+
+////////////////////////////////////////////////////
+#### adding photo
+POST http://localhost:9000/api/photos/add
+Content-Type: application/json
+
+{
+"PhotoID":4,
+"UserID":"3",
+"PhotoURL":"HGHGHGHKKKL",
+"UploadDate":343434
+}
+
+//////////////////////////////////////////
+### getting all photos
+GET http://localhost:9000/api/photos/getphotos
+
+////////////////////////////////////////////////
+#### getting photo by id
+GET http://localhost:9000/api/photos/4
+
+
+////////////////////////////////////////////////////
+#### updating photo
+
+PUT  http://localhost:9000/api/photos/1
+Content-Type: application/json
+
+{
+"PhotoID":4,
+"UserID":"3",
+"PhotoURL":"KKKK",
+"UploadDate":343434
+}
+
+
+
+
+
+////////////////////////////////////////////////////
+
+#### adding event
+POST http://localhost:9000/api/events/add
+Content-Type: application/json
+{
+"EventID":"4",
+"EventName":"1",
+"Descri_ption":"this a dance mode",
+"EventDate":"GETDATE()",
+"Location":"1234",
+"EventPosterURL":"5678"
+}
+
+//////////////////////////////////////////
+### getting all events
+GET http://localhost:9000/api/events/getevents
+
+////////////////////////////////////////////////
+#### getting event by id
+GET http://localhost:9000/api/events/4
+
+
+////////////////////////////////////////////////////
+#### updating event
+
+PUT  http://localhost:9000/api/events/4
+Content-Type: application/json
+
+{
+"EventID":"4",
+"EventName":"1",
+"Descri_ption":"events to carry on",
+"EventDate":2345546,
+"Location":"1234",
+"EventPosterURL":"5678"
+}
+
+
+
+
+
+
+////////////////////////////////////////////////////
+
+#### creating message
+POST http://localhost:9000/api/messages/create
+Content-Type: application/json
+
+{
+"MessageID":1,
+"SenderID":"1",
+"ReceiverID":"2",
+"MessageDate":123,
+"Content":"keep pushing"
+}
+
+//////////////////////////////////////////
+### getting all messages
+GET http://localhost:9000/api/messages/getmessages
+
+
+////////////////////////////////////////////////
+#### getting message by id
+GET http://localhost:9000/api/messages/1
+
+
+
+#### updating message
+PUT  http://localhost:9000/api/messages/3
+Content-Type: application/json
+
+{
+"SenderID":"3",
+"ReceiverID":"1",
+"MessageDate":1234,
+"Content":"this is an  updates"
+}
+
+
+
+
+
+////////////////////////////////////////////////////
+
+#### adding event atendee
+POST http://localhost:9000/api/eventAttendees/add
+Content-Type: application/json
+
+{
+"EventID":3,
+"AttendeeID":"9"
+}
+//////////////////////////////////////////
+### getting event attendees
+GET http://localhost:9000/api/eventAttendees/geteventAttendees
+
+
+////////////////////////////////////////////////
+#### getting eventattendee by id
+GET http://localhost:9000/api/eventAttendees/3
+
+
+#### UPDATING event atendee
+PUT http://localhost:9000/api/eventAttendees/1
+Content-Type: application/json
+
+{
+"AttendeeID":"10"
+}
