@@ -1,4 +1,8 @@
 import { poolRequest, sql } from "../utils/connectDb.js";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import dotenv from "dotenv"
+
 // adding a user
 export const addUserService = async (newUser) => {
   try {
@@ -17,6 +21,42 @@ export const addUserService = async (newUser) => {
     return error;
   }
 };
+
+// find by credentials
+
+
+export const findByCredentialsService= async(user)=>{
+  try {
+    // if there is a user with this username
+
+    const result=await poolRequest()
+    .input("Username",sql.VarChar, user.Username)
+    .query ("SELECT * FROM tbl_User WHERE Username=@Username");
+    if(result.recordset[0]){
+
+      // taking password from db and comparing it using bcrypt
+
+      if(await bcrypt.compare(user.Password,result.recordset[0].Password)){
+
+        // send user detailes without password and jwt token
+        let token =jwt.sign(
+          {
+          id:result.recordset[0].id,
+          Username : result.recordset[0].Username,
+          Email :result.recordset[0].Email,
+          },
+          process.env.jwt_secret,{expireIn:"2h"}
+        );
+        const{Password, ...user}=result.recordset[0];
+        return{user,token:` JWT ${token}`};
+      }else{
+        return{error:"invalid credentials"} 
+      }
+    }
+  } catch (error) {
+    return error;
+  }
+}
 
 // getting all users from table
 export const getUserService = async () => {

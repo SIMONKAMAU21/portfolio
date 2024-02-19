@@ -1,27 +1,37 @@
 
-
-
 /////////////////////////////////////////////////////
 ### Creating anew user
 POST http://localhost:9000/api/users/register
 Content-Type: application/json
 
 {
-   "UserID":"73",
-   "Username":"peter karaja",
-   "Email":"debugal@gmail.com",
-   "TagName":"sk",
-   "Password":"12346",
-   "Location":"nyeri"
+   "UserID":"13",
+   "Username":"jahnet  karaja",
+   "Email":"jahnetl@gmail.com",
+   "TagName":"jk",
+   "Password":"123467",
+   "Location":"michuki"
 }
+
+
+### login user
+POST http://localhost:9000/api/users/login
+Content-Type: application/json
+
+{
+   "Username":"simon karanja",
+   "Password":"12346"
+}
+
+
 
 //////////////////////////////////////////////////
 ### grtting all users from table
-
 GET http://localhost:9000/api/Users/getUser
+
+
 ///////////////////////////////////////////////
 ### getting users by id
-
 GET http://localhost:9000/api/Users/73
 
 
@@ -41,7 +51,7 @@ Content-Type: application/json
 
 
 
-/////////////////////////////////////////////////////////////////
+###/////////////////////////////////////////////////////////////////
 
 ### creating new friends
 POST  http://localhost:9000/api/friends/create
@@ -66,9 +76,6 @@ GET http://localhost:9000/api/friends/10
 
 
 
-
-
-
 ////////////////////////////////////////////////////////////////////////
 ### creating a group
 POST http://localhost:9000/api/groups/create
@@ -86,7 +93,7 @@ GET http://localhost:9000/api/groups/getgroups
 
 ////////////////////////////////////////////////
 #### getting groups by id
-GET http://localhost:9000/api/groups/3
+GET http://localhost:9000/api/groups/1
 
 
 
@@ -100,6 +107,7 @@ GET http://localhost:9000/api/groups/3
 
 POST http://localhost:9000/api/posts/add
 Content-Type: application/json
+
 {
    "PostID":"5",
    "UserID":"3",
@@ -133,11 +141,14 @@ Content-Type: application/json
 
 
 
+
+
 ////////////////////////////////////////////////////
 #### adding comment
 
 POST http://localhost:9000/api/comments/add
 Content-Type: application/json
+
 {
 "CommentID":5,
 "Content":"COmment on post 4 by user3",
@@ -146,11 +157,11 @@ Content-Type: application/json
 "PostID":"5"
 }
 //////////////////////////////////////////
-### getting all post
+### getting all comments
 GET http://localhost:9000/api/comments/getcomments
 
 ////////////////////////////////////////////////
-#### getting post by id
+#### getting comments by id
 GET http://localhost:9000/api/comments/4
 
 

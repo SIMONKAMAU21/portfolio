@@ -1,12 +1,14 @@
 import bcrypt from "bcrypt";
-import { addUserService, getUserService,updateUserService} from "../services/UserService.js";
-import { userValidator } from "../validator/UserValidator.js";
+import { addUserService, getUserService,updateUserService,findByCredentialsService} from "../services/UserService.js";
+import { userValidator,userLoginValidator } from "../validator/UserValidator.js";
 import {
   sendServerError,
   sendNotFound,
   sendCreated,
+  notAuthorized,
 } from "../helper/HelperFunctions.js";
-import { poolRequest } from "../utils/connectDb.js";
+
+import { response } from "express";
 
 export const registerUser = async (req, res) => {
   const { UserID, Username, Email, Password, TagName,Location } = req.body;
@@ -37,19 +39,36 @@ export const registerUser = async (req, res) => {
       }
     } catch (error) {
       console.log(error.message);
-      sendServerError(res, error.message);
+      sendServerError(res, response.message);
     }
   }
 };
 
 export const loginUser = async (req, res) => {
-  try {
-  } catch (error) {}
+  const {Username,Password} = req.body;
+  const {error}=userLoginValidator({Username,Password});
+  if(error){
+    return res.status(400).send(error.details[0].message);
+  }else{
+
+    try {
+      const result = await findByCredentialsService({ Username,Password });
+      if(result.error){
+        notAuthorized(res,result.error);
+      }else{
+        res.status(200).send(result)
+      }
+    } catch (error) {
+      console.log(error.message);
+      // sendServerError(res,error.message)
+    }
+  }
 };
 
 
 
 // getting all users
+
 export const getUsers = async (req, res) => {
 
   try {
