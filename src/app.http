@@ -5,12 +5,12 @@ POST http://localhost:9000/api/users/register
 Content-Type: application/json
 
 {
-   "UserID":"13",
-   "Username":"jahnet  karaja",
-   "Email":"jahnetl@gmail.com",
-   "TagName":"jk",
-   "Password":"123467",
-   "Location":"michuki"
+   "UserID": "191",
+   "Username": "SIMON KAMAU",
+   "Email": "simo1n234@gmail.com",
+   "TagName": "jk",
+   "Password": "12345@Ik",
+   "Location": "michuki"
 }
 
 
@@ -19,24 +19,23 @@ POST http://localhost:9000/api/users/login
 Content-Type: application/json
 
 {
-   "Username":"simon karanja",
-   "Password":"12346"
+   "Email": "simo1n234@gmail.com",
+   "Password": "12345@Ik"
+
 }
 
 
-
 //////////////////////////////////////////////////
-### grtting all users from table
+### getting all users from table
 GET http://localhost:9000/api/Users/getUser
-
-
+Authorization:JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkxLCJ1c2VybmFtZSI6IlNJTU9OIEtBTUFVIiwiZW1haWwiOiJzaW1vMW4yMzRAZ21haWwuY29tIiwiaWF0IjoxNzA4NDA3OTU4LCJleHAiOjE3MDg0MTUxNTh9.t167rr1xoW78KKj55zpU1-SVC2FWM504TEOp7w5wi9g
 ///////////////////////////////////////////////
 ### getting users by id
-GET http://localhost:9000/api/Users/73
-
+GET http://localhost:9000/api/Users/13
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkxLCJ1c2VybmFtZSI6IlNJTU9OIEtBTUFVIiwiZW1haWwiOiJzaW1vMW4yMzRAZ21haWwuY29tIiwiaWF0IjoxNzA4NDA3OTU4LCJleHAiOjE3MDg0MTUxNTh9.t167rr1xoW78KKj55zpU1-SVC2FWM504TEOp7w5wi9g
 
 ### Update a user
-PUT http://localhost:9000/api/users/73
+PUT http://localhost:9000/api/users/19
 Content-Type: application/json
 
 {
@@ -48,10 +47,14 @@ Content-Type: application/json
 }
 
 
+###
+# delete a users
+
+DELETE http://localhost:9000/api/users/11
 
 
 
-###/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
 ### creating new friends
 POST  http://localhost:9000/api/friends/create
@@ -66,6 +69,7 @@ Content-Type: application/json
 //////////////////////////////////////////////////////
 ###getting all friends
 GET http://localhost:9000/api/friends/getfriends
+
 
 ///////////////////////////////////////////////
 ### geting friendship by id
@@ -107,11 +111,12 @@ GET http://localhost:9000/api/groups/1
 
 POST http://localhost:9000/api/posts/add
 Content-Type: application/json
+Authorization:  JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkxLCJ1c2VybmFtZSI6IlNJTU9OIEtBTUFVIiwiZW1haWwiOiJzaW1vMW4yMzRAZ21haWwuY29tIiwiaWF0IjoxNzA4NDE1NTE3LCJleHAiOjE3MDg0MjI3MTd9.eC1iLpmqBM1Kc1yfUiacdWvJp6hUXWVf4rhOgwtBuzc
 
 {
-   "PostID":"5",
+   "PostID":"8",
    "UserID":"3",
-   "Content":"YOU CAN DO IT KEEP PUSHING",
+   "Content":"this is updted ehile Authorized",
    "PostDate":2023,
    "Likes":"19",
    "Comments":"6"
@@ -123,7 +128,8 @@ GET http://localhost:9000/api/posts/getposts
 
 ////////////////////////////////////////////////
 #### getting post by id
-GET http://localhost:9000/api/posts/1
+GET http://localhost:9000/api/posts/8
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkxLCJ1c2VybmFtZSI6IlNJTU9OIEtBTUFVIiwiZW1haWwiOiJzaW1vMW4yMzRAZ21haWwuY29tIiwiaWF0IjoxNzA4NDE1NTE3LCJleHAiOjE3MDg0MjI3MTd9.eC1iLpmqBM1Kc1yfUiacdWvJp6hUXWVf4rhOgwtBuzc
 
 
 ### updating a post
@@ -137,10 +143,9 @@ Content-Type: application/json
     "Comments":"MotherOfDragons",
     "PostDate":"kandara"
 }
-
-
-
-
+###
+DELETE http://localhost:9000/api/posts/7
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkxLCJ1c2VybmFtZSI6IlNJTU9OIEtBTUFVIiwiZW1haWwiOiJzaW1vMW4yMzRAZ21haWwuY29tIiwiaWF0IjoxNzA4NDE1NTE3LCJleHAiOjE3MDg0MjI3MTd9.eC1iLpmqBM1Kc1yfUiacdWvJp6hUXWVf4rhOgwtBuzc
 
 
 ////////////////////////////////////////////////////
@@ -156,15 +161,15 @@ Content-Type: application/json
 "CommentDate":2023,
 "PostID":"5"
 }
+
 //////////////////////////////////////////
 ### getting all comments
 GET http://localhost:9000/api/comments/getcomments
 
+
 ////////////////////////////////////////////////
 #### getting comments by id
 GET http://localhost:9000/api/comments/4
-
-
 
 
 
@@ -203,7 +208,6 @@ Content-Type: application/json
 "PhotoURL":"KKKK",
 "UploadDate":343434
 }
-
 
 
 
@@ -249,8 +253,6 @@ Content-Type: application/json
 
 
 
-
-
 ////////////////////////////////////////////////////
 
 #### creating message
@@ -286,7 +288,6 @@ Content-Type: application/json
 "MessageDate":1234,
 "Content":"this is an  updates"
 }
-
 
 
 

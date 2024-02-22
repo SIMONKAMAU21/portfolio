@@ -17,7 +17,7 @@ export const userValidator = (user) => {
    
    export const userLoginValidator = (user) => {
       const userLoginValidatorSchema = joi.object({
-       Username: joi.string().required(),
+        Email: joi.string().required(),
        Password: joi.string().required()
 
    });

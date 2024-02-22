@@ -128,3 +128,18 @@ export const updateevent = async (req, res) => {
      sendServerError(res, error.message);
    }
  };
+
+
+
+//  DELETING AN EVENT
+
+export const deleteevent = async (req,res) =>{
+  const id= req.params.id
+  const data= await getevents()
+  const eventToDelete= ((item)=>item.EventID == req.params.id);
+  if(!eventToDelete){
+  sendNotFound(res,"event to DELETE not found");
+} else {
+  await deletePostService
+}
+  }

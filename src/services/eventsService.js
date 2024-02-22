@@ -55,3 +55,18 @@ export const updateeventService = async (event) => {
     return error;
   }
 };
+
+
+
+// DELETING AN EVENT
+
+
+export const deleteeventService = async (EventID) =>{
+  try {
+    await poolRequest()
+    .input("EventID",sql.Int,EventID)
+    .query("DELETE from Event WHERE EventID=@EventID")
+  } catch (error) {
+    return error.message
+  }
+}
